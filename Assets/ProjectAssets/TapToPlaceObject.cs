@@ -6,8 +6,10 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using System;
 
-public class NewBehaviourScript : MonoBehaviour
+public class TapToPlaceObject : MonoBehaviour
 {
+
+    public GameObject objectToPlace;
     public GameObject placementIndicator;
     private ARRaycastManager arRaycastManager;
     private Pose placementPose;
@@ -15,7 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Start()
     {
-        
+
         arRaycastManager = FindObjectOfType<ARRaycastManager>();
     }
 
@@ -24,12 +26,21 @@ public class NewBehaviourScript : MonoBehaviour
     {
         UpdatePlacementPose();
         UpdatePlacementIndicator();
-        
+
+        if(placementPoseisValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            PlaceObject();
+        }
+    }
+
+    private void PlaceObject()
+    {
+        Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(90f, 0f, 0f));
     }
 
     private void UpdatePlacementIndicator()
     {
-        if(placementPoseisValid)
+        if (placementPoseisValid)
         {
             placementIndicator.SetActive(true); // setting visibility of Game Object to true
             placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation); // setting rotation of Game Object
@@ -45,10 +56,10 @@ public class NewBehaviourScript : MonoBehaviour
         var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
         var hits = new List<ARRaycastHit>();
 
-        arRaycastManager.Raycast(screenCenter, hits, TrackableType.Planes);
+        arRaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon);
 
         placementPoseisValid = hits.Count > 0;
-        if(placementPoseisValid)
+        if (placementPoseisValid)
         {
             placementPose = hits[0].pose;
         }
