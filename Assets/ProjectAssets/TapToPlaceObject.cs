@@ -35,7 +35,7 @@ public class TapToPlaceObject : MonoBehaviour
 
     private void PlaceObject()
     {
-        Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(90f, 0f, 0f));
+        Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(-90f, 0f, 0f));  
     }
 
     private void UpdatePlacementIndicator()
