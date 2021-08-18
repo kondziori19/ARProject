@@ -12,8 +12,9 @@ public class TapToPlaceObject : MonoBehaviour
     public GameObject objectToPlace;
     public GameObject placementIndicator;
     private ARRaycastManager arRaycastManager;
-    private Pose placementPose;
+    public Pose placementPose;
     private bool placementPoseisValid = false;
+    private bool isObjectPlaced = false;
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class TapToPlaceObject : MonoBehaviour
         UpdatePlacementPose();
         UpdatePlacementIndicator();
 
-        if(placementPoseisValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if(placementPoseisValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && !isObjectPlaced)
         {
             PlaceObject();
         }
@@ -35,7 +36,10 @@ public class TapToPlaceObject : MonoBehaviour
 
     private void PlaceObject()
     {
-        Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(-90f, 0f, 0f));  
+        GameObject placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(-90f, 0f, 0f));
+        isObjectPlaced = true;
+        placedObject.AddComponent<GameController>();
+        Destroy(this.gameObject);
     }
 
     private void UpdatePlacementIndicator()
@@ -58,7 +62,8 @@ public class TapToPlaceObject : MonoBehaviour
 
         arRaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon);
 
-        placementPoseisValid = hits.Count > 0;
+        if(hits.Count > 0) placementPoseisValid = true;
+         
         if (placementPoseisValid)
         {
             placementPose = hits[0].pose;
