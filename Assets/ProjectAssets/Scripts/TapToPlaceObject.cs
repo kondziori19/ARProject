@@ -2,23 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
-
 using UnityEngine.XR.ARSubsystems;
+
+
 using System;
 
 public class TapToPlaceObject : MonoBehaviour
 {
-
+   
     public GameObject objectToPlace;
     public GameObject placementIndicator;
     private ARRaycastManager arRaycastManager;
     public Pose placementPose;
     private bool placementPoseisValid = false;
-    private bool isObjectPlaced = false;
+    public bool isObjectPlaced = false;
+    ARPlaneManager m_ARPlaneManager;
 
     void Start()
     {
-
+        m_ARPlaneManager = GameObject.Find("AR Session Origin").GetComponent<ARPlaneManager>();
         arRaycastManager = FindObjectOfType<ARRaycastManager>();
     }
 
@@ -38,7 +40,13 @@ public class TapToPlaceObject : MonoBehaviour
     {
         GameObject placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(-90f, 0f, 0f));
         isObjectPlaced = true;
-        placedObject.AddComponent<GameController>();
+        //GameObject.Find("AR Session Origin").GetComponent<DisablePlanes>().isPlaced = true;
+        m_ARPlaneManager.enabled = false;
+        foreach (ARPlane plane in m_ARPlaneManager.trackables)
+        {
+            plane.gameObject.SetActive(false);
+        }
+
         Destroy(this.gameObject);
     }
 
@@ -70,4 +78,5 @@ public class TapToPlaceObject : MonoBehaviour
         }
 
     }
+
 }
