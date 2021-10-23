@@ -24,21 +24,27 @@ public class SelectFigure : MonoBehaviour
             {
 
                 Debug.Log("Object HIT");
-                HighlightTile(hit.collider.gameObject);
+                OnTileHit(hit.collider.gameObject);
                
             }
         }
 
     }
 
-    public void HighlightTile(GameObject obj)
+    public void OnTileHit(GameObject obj)
     {
+      
+        Debug.Log("Tile: " + obj.name);
+        Debug.Log("ChildCount: " + obj.transform.childCount);
+        if(obj.transform.childCount > 0)
+        {
+            Debug.Log("Child0: " + obj.transform.GetChild(0).name);
+        }
        
-        Debug.Log(obj.name);
-        Debug.Log(queen.transform.position);
-        Debug.Log(obj.transform.position);
-        queen.transform.position = obj.transform.position;
-        
+        queen.transform.parent = obj.transform;
+        queen.transform.localPosition = new Vector3(0,0,0);
+
+
     }
 
 

@@ -40,8 +40,9 @@ public class TapToPlaceObject : MonoBehaviour
 
     private void PlaceObject()
     {
-        GameObject placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(-90f, 0f, 0f));
         isObjectPlaced = true;
+        GameObject placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(-90f, 0f, 0f));
+        
 
       //  ARAnchor anchor =  m_ARAnchorManager.AddAnchor(placementPose);
      //   placedObject.transform.parent = anchor.transform;
@@ -51,8 +52,9 @@ public class TapToPlaceObject : MonoBehaviour
         {
             plane.gameObject.SetActive(false);
         }
-
-        Destroy(this.gameObject);
+        placementIndicator.SetActive(false);
+        gameObject.SetActive(false);
+        //Destroy(this.gameObject);
     }
 
     private void UpdatePlacementIndicator()
