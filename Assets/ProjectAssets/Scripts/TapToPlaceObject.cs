@@ -17,6 +17,7 @@ public class TapToPlaceObject : MonoBehaviour
     private bool placementPoseisValid = false;
     public bool isObjectPlaced = false;
     ARPlaneManager m_ARPlaneManager;
+    ARAnchorManager m_ARAnchorManager;
 
     void Start()
     {
@@ -34,13 +35,17 @@ public class TapToPlaceObject : MonoBehaviour
         {
             PlaceObject();
         }
+  
     }
 
     private void PlaceObject()
     {
         GameObject placedObject = Instantiate(objectToPlace, placementPose.position, placementPose.rotation * Quaternion.Euler(-90f, 0f, 0f));
         isObjectPlaced = true;
-        //GameObject.Find("AR Session Origin").GetComponent<DisablePlanes>().isPlaced = true;
+
+      //  ARAnchor anchor =  m_ARAnchorManager.AddAnchor(placementPose);
+     //   placedObject.transform.parent = anchor.transform;
+
         m_ARPlaneManager.enabled = false;
         foreach (ARPlane plane in m_ARPlaneManager.trackables)
         {

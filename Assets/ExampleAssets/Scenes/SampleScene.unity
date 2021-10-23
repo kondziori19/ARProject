@@ -273,7 +273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183994195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2111717061}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 388525035}
   m_Layer: 0
   m_Name: AR Session Origin
-  m_TagString: Untagged
+  m_TagString: ArSession
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -574,12 +574,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb236d1da488054d81944f484396a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPlace: {fileID: 3048376452126616226, guid: a4fbfb69608bfee42ba6900608d9c396,
+  objectToPlace: {fileID: 2294671602580305184, guid: b51b3f2fe17ab994098c52f0aa065832,
     type: 3}
   placementIndicator: {fileID: 183994195}
   placementPose:
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 0}
+  isObjectPlaced: 0
 --- !u!4 &1037343447
 Transform:
   m_ObjectHideFlags: 0
