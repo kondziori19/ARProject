@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2294671602580305262}
   - component: {fileID: 2294671602580304976}
   - component: {fileID: 2294671602580305357}
+  - component: {fileID: 588696748734720702}
   m_Layer: 0
   m_Name: Chess Pawn White (3)
-  m_TagString: Untagged
+  m_TagString: WhitePawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,6 +82,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &588696748734720702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: white
 --- !u!1 &2294671602580305157
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,9 +108,10 @@ GameObject:
   - component: {fileID: 2294671602580305015}
   - component: {fileID: 2294671602580304924}
   - component: {fileID: 2294671602580305115}
+  - component: {fileID: 4376597367789547192}
   m_Layer: 0
   m_Name: 2,7
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,6 +193,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4376597367789547192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305159
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,9 +217,10 @@ GameObject:
   - component: {fileID: 2294671602580305028}
   - component: {fileID: 2294671602580304956}
   - component: {fileID: 2294671602580305059}
+  - component: {fileID: 7352880557899503226}
   m_Layer: 0
   m_Name: 4,7
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,6 +302,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7352880557899503226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305160
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,9 +326,10 @@ GameObject:
   - component: {fileID: 2294671602580304971}
   - component: {fileID: 2294671602580304978}
   - component: {fileID: 2294671602580305091}
+  - component: {fileID: 253784010058745083}
   m_Layer: 0
   m_Name: 2,1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -369,6 +411,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &253784010058745083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305161
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,9 +529,10 @@ GameObject:
   - component: {fileID: 2294671602580304991}
   - component: {fileID: 2294671602580304932}
   - component: {fileID: 2294671602580305117}
+  - component: {fileID: 4428787542102841095}
   m_Layer: 0
   m_Name: 4,3
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -558,6 +613,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4428787542102841095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305163
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,9 +637,10 @@ GameObject:
   - component: {fileID: 2294671602580304984}
   - component: {fileID: 2294671602580305376}
   - component: {fileID: 2294671602580305064}
+  - component: {fileID: 2123291968027643016}
   m_Layer: 0
   m_Name: 4,4
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -653,6 +721,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2123291968027643016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305164
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,9 +744,10 @@ GameObject:
   - component: {fileID: 2294671602580305302}
   - component: {fileID: 2294671602580304986}
   - component: {fileID: 2294671602580305396}
+  - component: {fileID: 7535726204763426445}
   m_Layer: 0
   m_Name: Chess Bishop Black (1)
-  m_TagString: Untagged
+  m_TagString: BlackBishop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,6 +815,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7535726204763426445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: bishop
+  color: black
 --- !u!1 &2294671602580305165
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,9 +841,10 @@ GameObject:
   - component: {fileID: 2294671602580304985}
   - component: {fileID: 2294671602580305393}
   - component: {fileID: 2294671602580305081}
+  - component: {fileID: 7922482575181070558}
   m_Layer: 0
   m_Name: 6,2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -829,6 +925,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7922482575181070558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305166
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,9 +949,10 @@ GameObject:
   - component: {fileID: 2294671602580305017}
   - component: {fileID: 2294671602580305395}
   - component: {fileID: 2294671602580305058}
+  - component: {fileID: 7848427223747606144}
   m_Layer: 0
   m_Name: 7,1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -925,6 +1034,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7848427223747606144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305167
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,9 +1058,10 @@ GameObject:
   - component: {fileID: 2294671602580305051}
   - component: {fileID: 2294671602580304952}
   - component: {fileID: 2294671602580305086}
+  - component: {fileID: 4535507859197421800}
   m_Layer: 0
   m_Name: 7,4
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1020,6 +1142,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4535507859197421800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45054a503e0edf941888fe3f7ae11d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tiles: []
 --- !u!1 &2294671602580305185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,9 +1295,10 @@ GameObject:
   - component: {fileID: 2294671602580305034}
   - component: {fileID: 2294671602580304949}
   - component: {fileID: 2294671602580305138}
+  - component: {fileID: 879980498855457965}
   m_Layer: 0
   m_Name: 2,5
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1243,6 +1379,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &879980498855457965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,9 +1403,10 @@ GameObject:
   - component: {fileID: 2294671602580305033}
   - component: {fileID: 2294671602580304944}
   - component: {fileID: 2294671602580305116}
+  - component: {fileID: 4737607276292485486}
   m_Layer: 0
   m_Name: 3,0
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1339,6 +1488,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4737607276292485486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,9 +1512,10 @@ GameObject:
   - component: {fileID: 2294671602580305047}
   - component: {fileID: 2294671602580305377}
   - component: {fileID: 2294671602580305061}
+  - component: {fileID: 5384731246734313929}
   m_Layer: 0
   m_Name: 1,2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1434,6 +1596,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5384731246734313929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,9 +1620,10 @@ GameObject:
   - component: {fileID: 2294671602580305008}
   - component: {fileID: 2294671602580304946}
   - component: {fileID: 2294671602580305099}
+  - component: {fileID: 4354810069925256583}
   m_Layer: 0
   m_Name: 0,5
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1529,6 +1704,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4354810069925256583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,9 +1809,10 @@ GameObject:
   - component: {fileID: 2294671602580305006}
   - component: {fileID: 2294671602580304959}
   - component: {fileID: 2294671602580305112}
+  - component: {fileID: 2847000755726250179}
   m_Layer: 0
   m_Name: 6,1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1706,6 +1894,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2847000755726250179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,9 +1918,10 @@ GameObject:
   - component: {fileID: 2294671602580305072}
   - component: {fileID: 2294671602580304930}
   - component: {fileID: 2294671602580305084}
+  - component: {fileID: 4359371894441327551}
   m_Layer: 0
   m_Name: 1,6
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1802,6 +2003,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4359371894441327551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,9 +2027,10 @@ GameObject:
   - component: {fileID: 2294671602580305012}
   - component: {fileID: 2294671602580304950}
   - component: {fileID: 2294671602580305093}
+  - component: {fileID: 8271160788120104911}
   m_Layer: 0
   m_Name: 2,0
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1898,6 +2112,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8271160788120104911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,9 +2136,10 @@ GameObject:
   - component: {fileID: 2294671602580305001}
   - component: {fileID: 2294671602580304899}
   - component: {fileID: 2294671602580305080}
+  - component: {fileID: 1435622413212643685}
   m_Layer: 0
   m_Name: 0,7
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1994,6 +2221,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1435622413212643685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,9 +2245,10 @@ GameObject:
   - component: {fileID: 2294671602580304961}
   - component: {fileID: 2294671602580304934}
   - component: {fileID: 2294671602580305118}
+  - component: {fileID: 1973059813017421565}
   m_Layer: 0
   m_Name: 1,5
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2089,6 +2329,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1973059813017421565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,9 +2353,10 @@ GameObject:
   - component: {fileID: 2294671602580304966}
   - component: {fileID: 2294671602580304939}
   - component: {fileID: 2294671602580305119}
+  - component: {fileID: 1214899273164771142}
   m_Layer: 0
   m_Name: 7,0
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2185,6 +2438,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1214899273164771142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,9 +2461,10 @@ GameObject:
   - component: {fileID: 2294671602580305330}
   - component: {fileID: 2294671602580305010}
   - component: {fileID: 2294671602580304915}
+  - component: {fileID: 706022022550608172}
   m_Layer: 0
   m_Name: Chess Pawn White (7)
-  m_TagString: Untagged
+  m_TagString: WhitePawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2266,6 +2532,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &706022022550608172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: white
 --- !u!1 &2294671602580305199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,9 +2558,10 @@ GameObject:
   - component: {fileID: 2294671602580305018}
   - component: {fileID: 2294671602580305390}
   - component: {fileID: 2294671602580305057}
+  - component: {fileID: 5082490248898730762}
   m_Layer: 0
   m_Name: 3,2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2361,6 +2642,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5082490248898730762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,9 +2666,10 @@ GameObject:
   - component: {fileID: 2294671602580305055}
   - component: {fileID: 2294671602580304911}
   - component: {fileID: 2294671602580305087}
+  - component: {fileID: 1476652812473125996}
   m_Layer: 0
   m_Name: 5,6
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2457,6 +2751,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1476652812473125996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,9 +2774,10 @@ GameObject:
   - component: {fileID: 2294671602580305306}
   - component: {fileID: 2294671602580304990}
   - component: {fileID: 2294671602580305407}
+  - component: {fileID: 5779410385368451416}
   m_Layer: 0
   m_Name: Chess Pawn White (5)
-  m_TagString: Untagged
+  m_TagString: WhitePawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2538,6 +2845,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5779410385368451416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: white
 --- !u!1 &2294671602580305202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,9 +2871,10 @@ GameObject:
   - component: {fileID: 2294671602580304989}
   - component: {fileID: 2294671602580305400}
   - component: {fileID: 2294671602580305094}
+  - component: {fileID: 6791078438714802186}
   m_Layer: 0
   m_Name: 3,1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2634,6 +2956,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6791078438714802186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2645,9 +2979,10 @@ GameObject:
   - component: {fileID: 2294671602580305300}
   - component: {fileID: 2294671602580304987}
   - component: {fileID: 2294671602580305402}
+  - component: {fileID: 4332207939155484431}
   m_Layer: 0
   m_Name: Chess Knight White (1)
-  m_TagString: Untagged
+  m_TagString: WhiteKnight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2715,6 +3050,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4332207939155484431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: knight
+  color: white
 --- !u!1 &2294671602580305204
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,9 +3076,10 @@ GameObject:
   - component: {fileID: 2294671602580305031}
   - component: {fileID: 2294671602580304917}
   - component: {fileID: 2294671602580305100}
+  - component: {fileID: 5061360628956769784}
   m_Layer: 0
   m_Name: 7,5
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2810,6 +3160,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5061360628956769784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305205
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,9 +3184,10 @@ GameObject:
   - component: {fileID: 2294671602580305073}
   - component: {fileID: 2294671602580305381}
   - component: {fileID: 2294671602580305103}
+  - component: {fileID: 1701142292069948258}
   m_Layer: 0
   m_Name: 5,2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2905,6 +3268,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1701142292069948258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,9 +3292,10 @@ GameObject:
   - component: {fileID: 2294671602580305040}
   - component: {fileID: 2294671602580304937}
   - component: {fileID: 2294671602580305092}
+  - component: {fileID: 6810096143326639952}
   m_Layer: 0
   m_Name: 0,4
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3000,6 +3376,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6810096143326639952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,9 +3400,10 @@ GameObject:
   - component: {fileID: 2294671602580305004}
   - component: {fileID: 2294671602580304906}
   - component: {fileID: 2294671602580305096}
+  - component: {fileID: 8268231550264652438}
   m_Layer: 0
   m_Name: 1,4
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3095,6 +3484,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8268231550264652438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3106,9 +3507,10 @@ GameObject:
   - component: {fileID: 2294671602580305280}
   - component: {fileID: 2294671602580304965}
   - component: {fileID: 2294671602580305379}
+  - component: {fileID: 8873774956487360831}
   m_Layer: 0
   m_Name: Chess Bishop White
-  m_TagString: Untagged
+  m_TagString: WhiteBishop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3176,6 +3578,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8873774956487360831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: bishop
+  color: white
 --- !u!1 &2294671602580305209
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,9 +3604,10 @@ GameObject:
   - component: {fileID: 2294671602580304997}
   - component: {fileID: 2294671602580305389}
   - component: {fileID: 2294671602580305095}
+  - component: {fileID: 7202008543169845961}
   m_Layer: 0
   m_Name: 6,3
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3271,6 +3688,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7202008543169845961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,9 +3712,10 @@ GameObject:
   - component: {fileID: 2294671602580304972}
   - component: {fileID: 2294671602580304940}
   - component: {fileID: 2294671602580305067}
+  - component: {fileID: 7106373911289846164}
   m_Layer: 0
   m_Name: 4,2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3366,6 +3796,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7106373911289846164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305211
 GameObject:
   m_ObjectHideFlags: 0
@@ -3377,9 +3819,10 @@ GameObject:
   - component: {fileID: 2294671602580305310}
   - component: {fileID: 2294671602580304960}
   - component: {fileID: 2294671602580305378}
+  - component: {fileID: 8095142183807005012}
   m_Layer: 0
   m_Name: Chess Rook White
-  m_TagString: Untagged
+  m_TagString: WhiteRook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3447,6 +3890,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8095142183807005012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: rook
+  color: white
 --- !u!1 &2294671602580305212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,9 +3915,10 @@ GameObject:
   - component: {fileID: 2294671602580305287}
   - component: {fileID: 2294671602580304968}
   - component: {fileID: 2294671602580305382}
+  - component: {fileID: 7464147788206434601}
   m_Layer: 0
   m_Name: Chess Pawn Black (2)
-  m_TagString: Untagged
+  m_TagString: BlackPawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3528,6 +3986,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7464147788206434601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: black
 --- !u!1 &2294671602580305213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3540,9 +4012,10 @@ GameObject:
   - component: {fileID: 2294671602580305048}
   - component: {fileID: 2294671602580305394}
   - component: {fileID: 2294671602580305071}
+  - component: {fileID: 116656333618510517}
   m_Layer: 0
   m_Name: 4,1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3624,6 +4097,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &116656333618510517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305214
 GameObject:
   m_ObjectHideFlags: 0
@@ -3636,9 +4121,10 @@ GameObject:
   - component: {fileID: 2294671602580304962}
   - component: {fileID: 2294671602580305398}
   - component: {fileID: 2294671602580305070}
+  - component: {fileID: 3615739714401237541}
   m_Layer: 0
   m_Name: 5,1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3720,6 +4206,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3615739714401237541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305215
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,9 +4230,10 @@ GameObject:
   - component: {fileID: 2294671602580304994}
   - component: {fileID: 2294671602580304928}
   - component: {fileID: 2294671602580305063}
+  - component: {fileID: 9089002307847921711}
   m_Layer: 0
   m_Name: 5,0
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3816,6 +4315,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9089002307847921711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3827,9 +4338,10 @@ GameObject:
   - component: {fileID: 2294671602580305313}
   - component: {fileID: 2294671602580304996}
   - component: {fileID: 2294671602580304897}
+  - component: {fileID: 5325195300094918273}
   m_Layer: 0
   m_Name: Chess Pawn White
-  m_TagString: Untagged
+  m_TagString: WhitePawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3897,6 +4409,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5325195300094918273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: white
 --- !u!1 &2294671602580305217
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,9 +4435,10 @@ GameObject:
   - component: {fileID: 2294671602580305046}
   - component: {fileID: 2294671602580304904}
   - component: {fileID: 2294671602580305097}
+  - component: {fileID: 2537355982213708115}
   m_Layer: 0
   m_Name: 2,3
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3992,6 +4519,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2537355982213708115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305218
 GameObject:
   m_ObjectHideFlags: 0
@@ -4004,9 +4543,10 @@ GameObject:
   - component: {fileID: 2294671602580304995}
   - component: {fileID: 2294671602580304913}
   - component: {fileID: 2294671602580305076}
+  - component: {fileID: 1012787962885633548}
   m_Layer: 0
   m_Name: 4,6
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4088,6 +4628,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1012787962885633548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305219
 GameObject:
   m_ObjectHideFlags: 0
@@ -4099,9 +4651,10 @@ GameObject:
   - component: {fileID: 2294671602580305315}
   - component: {fileID: 2294671602580304999}
   - component: {fileID: 2294671602580304896}
+  - component: {fileID: 6167313481882311719}
   m_Layer: 0
   m_Name: Chess Pawn Black (7)
-  m_TagString: Untagged
+  m_TagString: BlackPawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4169,6 +4722,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6167313481882311719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: black
 --- !u!1 &2294671602580305220
 GameObject:
   m_ObjectHideFlags: 0
@@ -4180,9 +4747,10 @@ GameObject:
   - component: {fileID: 2294671602580305323}
   - component: {fileID: 2294671602580305000}
   - component: {fileID: 2294671602580304900}
+  - component: {fileID: 63603498080953426}
   m_Layer: 0
   m_Name: Chess Pawn Black
-  m_TagString: Untagged
+  m_TagString: BlackPawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4250,6 +4818,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &63603498080953426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: black
 --- !u!1 &2294671602580305221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4262,9 +4844,10 @@ GameObject:
   - component: {fileID: 2294671602580305045}
   - component: {fileID: 2294671602580305403}
   - component: {fileID: 2294671602580305142}
+  - component: {fileID: 1798863247056173985}
   m_Layer: 0
   m_Name: 4,5
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4345,6 +4928,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1798863247056173985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305222
 GameObject:
   m_ObjectHideFlags: 0
@@ -4356,9 +4951,10 @@ GameObject:
   - component: {fileID: 2294671602580305316}
   - component: {fileID: 2294671602580305002}
   - component: {fileID: 2294671602580304903}
+  - component: {fileID: 8716787157810079765}
   m_Layer: 0
   m_Name: Chess Pawn Black (4)
-  m_TagString: Untagged
+  m_TagString: BlackPawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4426,6 +5022,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8716787157810079765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: black
 --- !u!1 &2294671602580305223
 GameObject:
   m_ObjectHideFlags: 0
@@ -4438,9 +5048,10 @@ GameObject:
   - component: {fileID: 2294671602580305044}
   - component: {fileID: 2294671602580304914}
   - component: {fileID: 2294671602580305088}
+  - component: {fileID: 6761526761879672775}
   m_Layer: 0
   m_Name: 7,2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4521,6 +5132,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6761526761879672775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305224
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,9 +5155,10 @@ GameObject:
   - component: {fileID: 2294671602580305324}
   - component: {fileID: 2294671602580305007}
   - component: {fileID: 2294671602580304907}
+  - component: {fileID: 8860162344618465361}
   m_Layer: 0
   m_Name: Chess King Black
-  m_TagString: Untagged
+  m_TagString: BlackKing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4602,6 +5226,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8860162344618465361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: king
+  color: black
 --- !u!1 &2294671602580305225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,9 +5251,10 @@ GameObject:
   - component: {fileID: 2294671602580305325}
   - component: {fileID: 2294671602580305042}
   - component: {fileID: 2294671602580304905}
+  - component: {fileID: 126853420329410195}
   m_Layer: 0
   m_Name: Chess Pawn Black (1)
-  m_TagString: Untagged
+  m_TagString: BlackPawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4683,6 +5322,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &126853420329410195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: black
 --- !u!1 &2294671602580305226
 GameObject:
   m_ObjectHideFlags: 0
@@ -4695,9 +5348,10 @@ GameObject:
   - component: {fileID: 2294671602580305016}
   - component: {fileID: 2294671602580305401}
   - component: {fileID: 2294671602580305082}
+  - component: {fileID: 8359474091081914162}
   m_Layer: 0
   m_Name: 3,5
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4778,6 +5432,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8359474091081914162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305227
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,9 +5456,10 @@ GameObject:
   - component: {fileID: 2294671602580304967}
   - component: {fileID: 2294671602580304908}
   - component: {fileID: 2294671602580305056}
+  - component: {fileID: 4079311203204517819}
   m_Layer: 0
   m_Name: 4,0
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4874,6 +5541,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4079311203204517819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305228
 GameObject:
   m_ObjectHideFlags: 0
@@ -4886,9 +5565,10 @@ GameObject:
   - component: {fileID: 2294671602580305014}
   - component: {fileID: 2294671602580304927}
   - component: {fileID: 2294671602580305107}
+  - component: {fileID: 2143251230064764309}
   m_Layer: 0
   m_Name: 3,4
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4969,6 +5649,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2143251230064764309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305229
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,9 +5673,10 @@ GameObject:
   - component: {fileID: 2294671602580305011}
   - component: {fileID: 2294671602580305397}
   - component: {fileID: 2294671602580305066}
+  - component: {fileID: 951321190897229216}
   m_Layer: 0
   m_Name: 1,7
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5065,6 +5758,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &951321190897229216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305230
 GameObject:
   m_ObjectHideFlags: 0
@@ -5077,9 +5782,10 @@ GameObject:
   - component: {fileID: 2294671602580305021}
   - component: {fileID: 2294671602580305385}
   - component: {fileID: 2294671602580305062}
+  - component: {fileID: 3937708472493305951}
   m_Layer: 0
   m_Name: 3,7
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5161,6 +5867,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3937708472493305951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305231
 GameObject:
   m_ObjectHideFlags: 0
@@ -5172,9 +5890,10 @@ GameObject:
   - component: {fileID: 2294671602580305362}
   - component: {fileID: 2294671602580305043}
   - component: {fileID: 2294671602580304910}
+  - component: {fileID: 5801886982707508839}
   m_Layer: 0
   m_Name: Chess Bishop Black
-  m_TagString: Untagged
+  m_TagString: BlackBishop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5242,6 +5961,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5801886982707508839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: bishop
+  color: black
 --- !u!1 &2294671602580305232
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,9 +5987,10 @@ GameObject:
   - component: {fileID: 2294671602580305009}
   - component: {fileID: 2294671602580305391}
   - component: {fileID: 2294671602580305065}
+  - component: {fileID: 4162707882437928233}
   m_Layer: 0
   m_Name: 2,4
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5337,6 +6071,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4162707882437928233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,9 +6095,10 @@ GameObject:
   - component: {fileID: 2294671602580305013}
   - component: {fileID: 2294671602580305404}
   - component: {fileID: 2294671602580305137}
+  - component: {fileID: 3576031711233355509}
   m_Layer: 0
   m_Name: 0,1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5433,6 +6180,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3576031711233355509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305234
 GameObject:
   m_ObjectHideFlags: 0
@@ -5445,9 +6204,10 @@ GameObject:
   - component: {fileID: 2294671602580304975}
   - component: {fileID: 2294671602580304954}
   - component: {fileID: 2294671602580305111}
+  - component: {fileID: 5441798180585798147}
   m_Layer: 0
   m_Name: 6,4
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5528,6 +6288,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5441798180585798147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305235
 GameObject:
   m_ObjectHideFlags: 0
@@ -5540,9 +6312,10 @@ GameObject:
   - component: {fileID: 1318628197853243996}
   - component: {fileID: 2294671602580304936}
   - component: {fileID: 2294671602580305101}
+  - component: {fileID: 507861699347542136}
   m_Layer: 0
   m_Name: 0,0
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5624,6 +6397,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &507861699347542136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305236
 GameObject:
   m_ObjectHideFlags: 0
@@ -5635,9 +6420,10 @@ GameObject:
   - component: {fileID: 2294671602580305333}
   - component: {fileID: 2294671602580305019}
   - component: {fileID: 2294671602580304919}
+  - component: {fileID: 6896477022023309617}
   m_Layer: 0
   m_Name: Chess Queen White
-  m_TagString: Untagged
+  m_TagString: WhiteQueen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5705,6 +6491,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6896477022023309617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: queen
+  color: white
 --- !u!1 &2294671602580305237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5716,9 +6516,10 @@ GameObject:
   - component: {fileID: 2294671602580305339}
   - component: {fileID: 2294671602580305023}
   - component: {fileID: 2294671602580304922}
+  - component: {fileID: 256247547335609209}
   m_Layer: 0
   m_Name: Chess Pawn White (4)
-  m_TagString: Untagged
+  m_TagString: WhitePawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5786,6 +6587,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &256247547335609209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: white
 --- !u!1 &2294671602580305238
 GameObject:
   m_ObjectHideFlags: 0
@@ -5798,9 +6613,10 @@ GameObject:
   - component: {fileID: 2294671602580304988}
   - component: {fileID: 2294671602580305388}
   - component: {fileID: 2294671602580305136}
+  - component: {fileID: 1852295819617149676}
   m_Layer: 0
   m_Name: 6,6
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5882,6 +6698,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1852295819617149676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305239
 GameObject:
   m_ObjectHideFlags: 0
@@ -5894,9 +6722,10 @@ GameObject:
   - component: {fileID: 2294671602580305020}
   - component: {fileID: 2294671602580304918}
   - component: {fileID: 2294671602580305106}
+  - component: {fileID: 7206353188992580066}
   m_Layer: 0
   m_Name: 5,4
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5977,6 +6806,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7206353188992580066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5989,9 +6830,10 @@ GameObject:
   - component: {fileID: 2294671602580305026}
   - component: {fileID: 2294671602580304947}
   - component: {fileID: 2294671602580305068}
+  - component: {fileID: 3163482658721943185}
   m_Layer: 0
   m_Name: 3,3
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6072,6 +6914,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3163482658721943185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305241
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,9 +6938,10 @@ GameObject:
   - component: {fileID: 2294671602580305024}
   - component: {fileID: 2294671602580304902}
   - component: {fileID: 2294671602580305105}
+  - component: {fileID: 5650463023976789539}
   m_Layer: 0
   m_Name: 6,0
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6168,6 +7023,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5650463023976789539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305242
 GameObject:
   m_ObjectHideFlags: 0
@@ -6179,9 +7046,10 @@ GameObject:
   - component: {fileID: 2294671602580305336}
   - component: {fileID: 2294671602580305022}
   - component: {fileID: 2294671602580304916}
+  - component: {fileID: 724615147010493520}
   m_Layer: 0
   m_Name: Chess Knight Black
-  m_TagString: Untagged
+  m_TagString: BlackKnight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6249,6 +7117,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &724615147010493520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: knight
+  color: black
 --- !u!1 &2294671602580305243
 GameObject:
   m_ObjectHideFlags: 0
@@ -6261,9 +7143,10 @@ GameObject:
   - component: {fileID: 2294671602580304983}
   - component: {fileID: 2294671602580304901}
   - component: {fileID: 2294671602580305143}
+  - component: {fileID: 7635679916410637754}
   m_Layer: 0
   m_Name: 6,7
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6345,6 +7228,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7635679916410637754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305244
 GameObject:
   m_ObjectHideFlags: 0
@@ -6357,9 +7252,10 @@ GameObject:
   - component: {fileID: 2294671602580304981}
   - component: {fileID: 2294671602580304926}
   - component: {fileID: 2294671602580305069}
+  - component: {fileID: 1148137504458645960}
   m_Layer: 0
   m_Name: 5,7
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6441,6 +7337,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1148137504458645960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305245
 GameObject:
   m_ObjectHideFlags: 0
@@ -6452,9 +7360,10 @@ GameObject:
   - component: {fileID: 2294671602580305314}
   - component: {fileID: 2294671602580304993}
   - component: {fileID: 2294671602580304925}
+  - component: {fileID: 2636331614593184027}
   m_Layer: 0
   m_Name: Chess Pawn White (6)
-  m_TagString: Untagged
+  m_TagString: WhitePawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6522,6 +7431,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2636331614593184027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: white
 --- !u!1 &2294671602580305246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6534,9 +7457,10 @@ GameObject:
   - component: {fileID: 2294671602580305005}
   - component: {fileID: 2294671602580304921}
   - component: {fileID: 2294671602580305139}
+  - component: {fileID: 7858949502071795529}
   m_Layer: 0
   m_Name: 2,6
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6618,6 +7542,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7858949502071795529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305247
 GameObject:
   m_ObjectHideFlags: 0
@@ -6630,9 +7566,10 @@ GameObject:
   - component: {fileID: 2294671602580305049}
   - component: {fileID: 2294671602580304931}
   - component: {fileID: 2294671602580305114}
+  - component: {fileID: 4056384816804876992}
   m_Layer: 0
   m_Name: 7,3
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6713,6 +7650,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4056384816804876992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305248
 GameObject:
   m_ObjectHideFlags: 0
@@ -6724,9 +7673,10 @@ GameObject:
   - component: {fileID: 2294671602580305351}
   - component: {fileID: 2294671602580305038}
   - component: {fileID: 2294671602580304933}
+  - component: {fileID: 8368034585333784784}
   m_Layer: 0
   m_Name: Chess Pawn Black (6)
-  m_TagString: Untagged
+  m_TagString: BlackPawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6794,6 +7744,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8368034585333784784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: black
 --- !u!1 &2294671602580305249
 GameObject:
   m_ObjectHideFlags: 0
@@ -6805,9 +7769,10 @@ GameObject:
   - component: {fileID: 2294671602580305353}
   - component: {fileID: 2294671602580305074}
   - component: {fileID: 2294671602580304943}
+  - component: {fileID: 4119223317093167706}
   m_Layer: 0
   m_Name: Chess Pawn White (1)
-  m_TagString: Untagged
+  m_TagString: WhitePawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6875,6 +7840,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4119223317093167706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: white
 --- !u!1 &2294671602580305250
 GameObject:
   m_ObjectHideFlags: 0
@@ -6887,9 +7866,10 @@ GameObject:
   - component: {fileID: 2294671602580304973}
   - component: {fileID: 2294671602580304941}
   - component: {fileID: 2294671602580305089}
+  - component: {fileID: 8308614057941257476}
   m_Layer: 0
   m_Name: 6,5
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6970,6 +7950,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8308614057941257476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305251
 GameObject:
   m_ObjectHideFlags: 0
@@ -6981,9 +7973,10 @@ GameObject:
   - component: {fileID: 2294671602580305350}
   - component: {fileID: 2294671602580305039}
   - component: {fileID: 2294671602580304938}
+  - component: {fileID: 1123629828133398499}
   m_Layer: 0
   m_Name: Chess Pawn Black (5)
-  m_TagString: Untagged
+  m_TagString: BlackPawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7051,6 +8044,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1123629828133398499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: black
 --- !u!1 &2294671602580305252
 GameObject:
   m_ObjectHideFlags: 0
@@ -7063,9 +8070,10 @@ GameObject:
   - component: {fileID: 2294671602580304977}
   - component: {fileID: 2294671602580305386}
   - component: {fileID: 2294671602580305104}
+  - component: {fileID: 1954378802230547932}
   m_Layer: 0
   m_Name: 7,7
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7147,6 +8155,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1954378802230547932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305253
 GameObject:
   m_ObjectHideFlags: 0
@@ -7158,9 +8178,10 @@ GameObject:
   - component: {fileID: 2294671602580305356}
   - component: {fileID: 2294671602580305078}
   - component: {fileID: 2294671602580304979}
+  - component: {fileID: 8173780639380037399}
   m_Layer: 0
   m_Name: Chess Rook Black (1)
-  m_TagString: Untagged
+  m_TagString: BlackRook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7228,6 +8249,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8173780639380037399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: rook
+  color: black
 --- !u!1 &2294671602580305254
 GameObject:
   m_ObjectHideFlags: 0
@@ -7239,9 +8274,10 @@ GameObject:
   - component: {fileID: 2294671602580305358}
   - component: {fileID: 2294671602580305037}
   - component: {fileID: 2294671602580304942}
+  - component: {fileID: 1718925843053459285}
   m_Layer: 0
   m_Name: Chess Knight White
-  m_TagString: Untagged
+  m_TagString: WhiteKnight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7309,6 +8345,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1718925843053459285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: knight
+  color: white
 --- !u!1 &2294671602580305255
 GameObject:
   m_ObjectHideFlags: 0
@@ -7321,9 +8371,10 @@ GameObject:
   - component: {fileID: 2294671602580305075}
   - component: {fileID: 2294671602580305384}
   - component: {fileID: 2294671602580305108}
+  - component: {fileID: 7942653487951213328}
   m_Layer: 0
   m_Name: 1,3
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7404,6 +8455,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7942653487951213328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305258
 GameObject:
   m_ObjectHideFlags: 0
@@ -7416,9 +8479,10 @@ GameObject:
   - component: {fileID: 2294671602580304998}
   - component: {fileID: 2294671602580304935}
   - component: {fileID: 2294671602580305102}
+  - component: {fileID: 1308705038005080058}
   m_Layer: 0
   m_Name: 0,3
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7499,6 +8563,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1308705038005080058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305259
 GameObject:
   m_ObjectHideFlags: 0
@@ -7511,9 +8587,10 @@ GameObject:
   - component: {fileID: 2294671602580305036}
   - component: {fileID: 2294671602580304898}
   - component: {fileID: 2294671602580305077}
+  - component: {fileID: 1210342164413564583}
   m_Layer: 0
   m_Name: 5,3
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7594,6 +8671,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1210342164413564583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305264
 GameObject:
   m_ObjectHideFlags: 0
@@ -7606,9 +8695,10 @@ GameObject:
   - component: {fileID: 2294671602580304963}
   - component: {fileID: 2294671602580304920}
   - component: {fileID: 2294671602580305110}
+  - component: {fileID: 6038701987357605207}
   m_Layer: 0
   m_Name: 2,2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7689,6 +8779,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6038701987357605207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305265
 GameObject:
   m_ObjectHideFlags: 0
@@ -7700,9 +8802,10 @@ GameObject:
   - component: {fileID: 2294671602580305364}
   - component: {fileID: 2294671602580305054}
   - component: {fileID: 2294671602580304951}
+  - component: {fileID: 7771332074414797979}
   m_Layer: 0
   m_Name: Chess Knight Black (1)
-  m_TagString: Untagged
+  m_TagString: BlackKnight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7770,6 +8873,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7771332074414797979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: knight
+  color: black
 --- !u!1 &2294671602580305266
 GameObject:
   m_ObjectHideFlags: 0
@@ -7781,9 +8898,10 @@ GameObject:
   - component: {fileID: 2294671602580305361}
   - component: {fileID: 2294671602580305041}
   - component: {fileID: 2294671602580304909}
+  - component: {fileID: 1957101722313292023}
   m_Layer: 0
   m_Name: Chess Rook Black
-  m_TagString: Untagged
+  m_TagString: BlackRook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7851,6 +8969,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1957101722313292023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: rook
+  color: black
 --- !u!1 &2294671602580305267
 GameObject:
   m_ObjectHideFlags: 0
@@ -7863,9 +8995,10 @@ GameObject:
   - component: {fileID: 2294671602580304980}
   - component: {fileID: 2294671602580305387}
   - component: {fileID: 2294671602580305090}
+  - component: {fileID: 7511325477644245750}
   m_Layer: 0
   m_Name: 0,2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7911,7 +9044,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 0ce7ca15cd93341beb67396a494cef55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7946,6 +9079,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7511325477644245750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305268
 GameObject:
   m_ObjectHideFlags: 0
@@ -7957,9 +9102,10 @@ GameObject:
   - component: {fileID: 2294671602580305371}
   - component: {fileID: 2294671602580305027}
   - component: {fileID: 2294671602580304955}
+  - component: {fileID: 3523275807076364177}
   m_Layer: 0
   m_Name: Chess King White
-  m_TagString: Untagged
+  m_TagString: WhiteKing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8027,6 +9173,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3523275807076364177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: king
+  color: white
 --- !u!1 &2294671602580305269
 GameObject:
   m_ObjectHideFlags: 0
@@ -8038,9 +9198,10 @@ GameObject:
   - component: {fileID: 2294671602580305368}
   - component: {fileID: 2294671602580305030}
   - component: {fileID: 2294671602580304953}
+  - component: {fileID: 7631837790152939397}
   m_Layer: 0
   m_Name: Chess Rook White (1)
-  m_TagString: Untagged
+  m_TagString: WhiteRook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8108,6 +9269,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7631837790152939397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: rook
+  color: white
 --- !u!1 &2294671602580305270
 GameObject:
   m_ObjectHideFlags: 0
@@ -8119,9 +9294,10 @@ GameObject:
   - component: {fileID: 2294671602580305365}
   - component: {fileID: 2294671602580305052}
   - component: {fileID: 2294671602580304948}
+  - component: {fileID: 922153278838602232}
   m_Layer: 0
   m_Name: Chess Queen Black
-  m_TagString: Untagged
+  m_TagString: BlackQueen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8189,6 +9365,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &922153278838602232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: queen
+  color: black
 --- !u!1 &2294671602580305271
 GameObject:
   m_ObjectHideFlags: 0
@@ -8201,9 +9391,10 @@ GameObject:
   - component: {fileID: 2294671602580304964}
   - component: {fileID: 2294671602580304912}
   - component: {fileID: 2294671602580305098}
+  - component: {fileID: 5983296341354149611}
   m_Layer: 0
   m_Name: 3,6
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8285,6 +9476,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5983296341354149611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305272
 GameObject:
   m_ObjectHideFlags: 0
@@ -8297,9 +9500,10 @@ GameObject:
   - component: {fileID: 2294671602580304970}
   - component: {fileID: 2294671602580305399}
   - component: {fileID: 2294671602580305085}
+  - component: {fileID: 6804073924584867525}
   m_Layer: 0
   m_Name: 0,6
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8381,6 +9585,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6804073924584867525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305273
 GameObject:
   m_ObjectHideFlags: 0
@@ -8393,9 +9609,10 @@ GameObject:
   - component: {fileID: 2294671602580304982}
   - component: {fileID: 2294671602580305405}
   - component: {fileID: 2294671602580305060}
+  - component: {fileID: 1683698240592204534}
   m_Layer: 0
   m_Name: 1,1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8477,6 +9694,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1683698240592204534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305274
 GameObject:
   m_ObjectHideFlags: 0
@@ -8488,9 +9717,10 @@ GameObject:
   - component: {fileID: 2294671602580305373}
   - component: {fileID: 2294671602580305029}
   - component: {fileID: 2294671602580304958}
+  - component: {fileID: 3096876041355043152}
   m_Layer: 0
   m_Name: Chess Bishop White (1)
-  m_TagString: Untagged
+  m_TagString: WhiteBishop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8558,6 +9788,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3096876041355043152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: bishop
+  color: white
 --- !u!1 &2294671602580305275
 GameObject:
   m_ObjectHideFlags: 0
@@ -8570,9 +9814,10 @@ GameObject:
   - component: {fileID: 2294671602580305053}
   - component: {fileID: 2294671602580305392}
   - component: {fileID: 2294671602580305083}
+  - component: {fileID: 3178828719723161018}
   m_Layer: 0
   m_Name: 5,5
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8653,6 +9898,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3178828719723161018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305276
 GameObject:
   m_ObjectHideFlags: 0
@@ -8664,9 +9921,10 @@ GameObject:
   - component: {fileID: 2294671602580305344}
   - component: {fileID: 2294671602580305032}
   - component: {fileID: 2294671602580304929}
+  - component: {fileID: 7195938236080752767}
   m_Layer: 0
   m_Name: Chess Pawn White (2)
-  m_TagString: Untagged
+  m_TagString: WhitePawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8734,6 +9992,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7195938236080752767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: white
 --- !u!1 &2294671602580305277
 GameObject:
   m_ObjectHideFlags: 0
@@ -8746,9 +10018,10 @@ GameObject:
   - component: {fileID: 2294671602580304992}
   - component: {fileID: 2294671602580304923}
   - component: {fileID: 2294671602580305109}
+  - component: {fileID: 3871426797804265310}
   m_Layer: 0
   m_Name: 7,6
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8830,6 +10103,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3871426797804265310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305278
 GameObject:
   m_ObjectHideFlags: 0
@@ -8842,9 +10127,10 @@ GameObject:
   - component: {fileID: 2294671602580305003}
   - component: {fileID: 2294671602580304945}
   - component: {fileID: 2294671602580305113}
+  - component: {fileID: 4223375600260681475}
   m_Layer: 0
   m_Name: 1,0
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8926,6 +10212,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4223375600260681475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68495d4b2323b0d4dbbd2c672c3c4728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2294671602580305279
 GameObject:
   m_ObjectHideFlags: 0
@@ -8937,9 +10235,10 @@ GameObject:
   - component: {fileID: 2294671602580305347}
   - component: {fileID: 2294671602580305035}
   - component: {fileID: 2294671602580304957}
+  - component: {fileID: 1885852813375842561}
   m_Layer: 0
   m_Name: Chess Pawn Black (3)
-  m_TagString: Untagged
+  m_TagString: BlackPawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9007,3 +10306,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1885852813375842561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294671602580305279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94a6e60ed8f9ce4187f16168b7d752c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: pawn
+  color: black

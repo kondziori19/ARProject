@@ -5,6 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - ArSession
+  - WhitePawn
+  - WhiteRook
+  - WhiteKnight
+  - WhiteBishop
+  - WhiteQueen
+  - WhiteKing
+  - BlackPawn
+  - BlackRook
+  - BlackKnight
+  - BlackBishop
+  - BlackQueen
+  - BlackKing
+  - Tile
   layers:
   - Default
   - TransparentFX

@@ -5,11 +5,12 @@ using UnityEngine;
 public class SelectFigure : MonoBehaviour
 {
     private Color startcolor;
-    GameObject queen;
+    public GameObject[] tiles;
+
     // Start is called before the first frame update
     void Start()
     {
-       queen = GameObject.Find("Chess Queen White");
+        tiles = GameObject.FindGameObjectsWithTag("Tile");
     }
 
     // Update is called once per frame
@@ -22,10 +23,7 @@ public class SelectFigure : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100))
             {
-
-                Debug.Log("Object HIT");
-                OnTileHit(hit.collider.gameObject);
-               
+                OnTileHit(hit.collider.gameObject);     
             }
         }
 
@@ -35,17 +33,84 @@ public class SelectFigure : MonoBehaviour
     {
       
         Debug.Log("Tile: " + obj.name);
-        Debug.Log("ChildCount: " + obj.transform.childCount);
+        // Debug.Log("ChildCount: " + obj.transform.childCount);
         if(obj.transform.childCount > 0)
         {
-            Debug.Log("Child0: " + obj.transform.GetChild(0).name);
-        }
-       
-        queen.transform.parent = obj.transform;
-        queen.transform.localPosition = new Vector3(0,0,0);
+            //Debug.Log("Child0: " + obj.transform.GetChild(0).name);
+            //Debug.Log("Figure Type: " + obj.transform.GetChild(0).GetComponent<Figure>().GetFigureType());
+            //Debug.Log("Figure Color: " + obj.transform.GetChild(0).GetComponent<Figure>().GetColor());
+            Debug.Log("curr_x: " + obj.GetComponent<TileIndices>().GetX() + " curr_y: " + obj.GetComponent<TileIndices>().GetY());
+            ShowPossibleMoves(obj);
 
+        }
 
     }
+
+    public void ShowPossibleMoves(GameObject tile)
+    {
+        string type = tile.transform.GetChild(0).GetComponent<Figure>().GetFigureType();
+        string color = tile.transform.GetChild(0).GetComponent<Figure>().GetColor();
+
+        if(type == "pawn")
+        {
+            foreach(GameObject t in PawnMoves(tile))
+            {
+                Debug.Log("x: " + t.GetComponent<TileIndices>().GetX() + " y: " + t.GetComponent<TileIndices>().GetY());
+                
+            }    
+        }
+
+    }
+
+    public List<GameObject> PawnMoves(GameObject current_tile)
+    {
+        string type = current_tile.transform.GetChild(0).GetComponent<Figure>().GetFigureType();
+        string color = current_tile.transform.GetChild(0).GetComponent<Figure>().GetColor();
+
+        List<GameObject> PossibleMoveTiles = new List<GameObject>();
+
+        int x = current_tile.GetComponent<TileIndices>().GetX();
+        int y = current_tile.GetComponent<TileIndices>().GetY();
+
+        if (color == "white")
+        {
+            foreach(GameObject tile in tiles)
+            {
+                if(x == 1) // if pawn stands at starting position
+                {
+                    if(tile.GetComponent<TileIndices>().GetX() == x + 2 && tile.GetComponent<TileIndices>().GetY() == y)
+                    {
+                        if (tile.transform.childCount == 0) // if there is no other figure at this tile
+                        {
+                            PossibleMoveTiles.Add(tile);
+                        }
+                    }    
+                }
+
+                if (tile.GetComponent<TileIndices>().GetX() == x + 1 && tile.GetComponent<TileIndices>().GetY() == y) // move white pawn 1 tile ahead
+                {
+                    if(tile.transform.childCount == 0) // if there is no other figure at this tile
+                    {
+                        PossibleMoveTiles.Add(tile);
+                    }
+                }
+
+                if (tile.GetComponent<TileIndices>().GetX() == x + 1 && (tile.GetComponent<TileIndices>().GetY() == y - 1 || tile.GetComponent<TileIndices>().GetY() == y + 1))
+                {
+                    if (tile.transform.childCount == 1) // if there is figure at this tile
+                    {
+                        if(tile.transform.GetChild(0).GetComponent<Figure>().GetColor() == "black")
+                        {
+                            PossibleMoveTiles.Add(tile);
+                        }
+                    }
+                }
+            }
+        }
+        return PossibleMoveTiles;
+    }
+
+
 
 
 }
