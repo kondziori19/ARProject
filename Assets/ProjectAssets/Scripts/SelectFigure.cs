@@ -6,11 +6,16 @@ public class SelectFigure : MonoBehaviour
 {
     private Color startcolor;
     public GameObject[] tiles;
+    GameObject tileRef;
+    Mesh mymesh;
 
     // Start is called before the first frame update
     void Start()
     {
+        tileRef = GameObject.Find("0,0");
         tiles = GameObject.FindGameObjectsWithTag("Tile");
+        mymesh = tileRef.GetComponent<MeshFilter>().mesh;
+        tileRef.GetComponent<MeshFilter>().mesh = null;
     }
 
     // Update is called once per frame
@@ -40,6 +45,7 @@ public class SelectFigure : MonoBehaviour
             //Debug.Log("Figure Type: " + obj.transform.GetChild(0).GetComponent<Figure>().GetFigureType());
             //Debug.Log("Figure Color: " + obj.transform.GetChild(0).GetComponent<Figure>().GetColor());
             Debug.Log("curr_x: " + obj.GetComponent<TileIndices>().GetX() + " curr_y: " + obj.GetComponent<TileIndices>().GetY());
+            ClearTilesHighlight();
             ShowPossibleMoves(obj);
 
         }
@@ -56,11 +62,18 @@ public class SelectFigure : MonoBehaviour
             foreach(GameObject t in PawnMoves(tile))
             {
                 Debug.Log("x: " + t.GetComponent<TileIndices>().GetX() + " y: " + t.GetComponent<TileIndices>().GetY());
-                
+                t.GetComponent<MeshFilter>().mesh = mymesh;
             }    
         }
-
     }
+
+    public void ClearTilesHighlight()
+    {
+        foreach(GameObject tile in tiles)
+        {
+            tile.GetComponent<MeshFilter>().mesh = null;
+        }
+    }    
 
     public List<GameObject> PawnMoves(GameObject current_tile)
     {
