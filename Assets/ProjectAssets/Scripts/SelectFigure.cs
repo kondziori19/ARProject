@@ -36,10 +36,12 @@ public class SelectFigure : MonoBehaviour
 
     public void OnTileHit(GameObject obj)
     {
-      
-        Debug.Log("Tile: " + obj.name);
-        // Debug.Log("ChildCount: " + obj.transform.childCount);
-        if(obj.transform.childCount > 0)
+ 
+        if(obj.GetComponent<MoveData>().canMove)
+        {
+            MovePiece(obj);
+        }
+        else if (obj.transform.childCount > 0)
         {
             //Debug.Log("Child0: " + obj.transform.GetChild(0).name);
             //Debug.Log("Figure Type: " + obj.transform.GetChild(0).GetComponent<Figure>().GetFigureType());
@@ -50,6 +52,23 @@ public class SelectFigure : MonoBehaviour
 
         }
 
+
+
+    }
+
+    public void MovePiece(GameObject tile)
+    {
+        GameObject origin = tile.GetComponent<MoveData>().GetMoveOrigin();
+        GameObject piece = origin.transform.GetChild(0).gameObject;
+
+        if(tile.transform.childCount > 0)
+        {
+            Destroy(tile.transform.GetChild(0).gameObject);
+        }
+
+        piece.transform.parent = tile.transform;
+        piece.transform.localPosition = new Vector3(0, 0, 0);
+        ClearTilesHighlight(); 
     }
 
     public void ShowPossibleMoves(GameObject tile)
@@ -63,15 +82,19 @@ public class SelectFigure : MonoBehaviour
             {
                 Debug.Log("x: " + t.GetComponent<TileIndices>().GetX() + " y: " + t.GetComponent<TileIndices>().GetY());
                 t.GetComponent<MeshFilter>().mesh = mymesh;
+                t.GetComponent<MoveData>().canMove = true;
+                t.GetComponent<MoveData>().SetMoveOrigin(tile);
             }    
         }
     }
 
-    public void ClearTilesHighlight()
+    public void ClearTilesHighlight() // clears mesh of all tiles
     {
         foreach(GameObject tile in tiles)
         {
             tile.GetComponent<MeshFilter>().mesh = null;
+            tile.GetComponent<MoveData>().canMove = false;
+            tile.GetComponent<MoveData>().SetMoveOrigin(null);
         }
     }    
 
@@ -113,6 +136,41 @@ public class SelectFigure : MonoBehaviour
                     if (tile.transform.childCount == 1) // if there is figure at this tile
                     {
                         if(tile.transform.GetChild(0).GetComponent<Figure>().GetColor() == "black")
+                        {
+                            PossibleMoveTiles.Add(tile);
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            foreach (GameObject tile in tiles)
+            {
+                if (x == 6) // if pawn stands at starting position
+                {
+                    if (tile.GetComponent<TileIndices>().GetX() == x - 2 && tile.GetComponent<TileIndices>().GetY() == y)
+                    {
+                        if (tile.transform.childCount == 0) // if there is no other figure at this tile
+                        {
+                            PossibleMoveTiles.Add(tile);
+                        }
+                    }
+                }
+
+                if (tile.GetComponent<TileIndices>().GetX() == x - 1 && tile.GetComponent<TileIndices>().GetY() == y) // move black pawn 1 tile ahead
+                {
+                    if (tile.transform.childCount == 0) // if there is no other figure at this tile
+                    {
+                        PossibleMoveTiles.Add(tile);
+                    }
+                }
+
+                if (tile.GetComponent<TileIndices>().GetX() == x - 1 && (tile.GetComponent<TileIndices>().GetY() == y - 1 || tile.GetComponent<TileIndices>().GetY() == y + 1))
+                {
+                    if (tile.transform.childCount == 1) // if there is figure at this tile
+                    {
+                        if (tile.transform.GetChild(0).GetComponent<Figure>().GetColor() == "white")
                         {
                             PossibleMoveTiles.Add(tile);
                         }
