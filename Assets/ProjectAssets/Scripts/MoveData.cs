@@ -10,7 +10,7 @@ public class MoveData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canMove = false;
+        canMove = false; //determines if this tile is one of legal moves by selected piece
     }
     
     public void SetMoveOrigin(GameObject obj)
