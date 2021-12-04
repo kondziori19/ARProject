@@ -7,6 +7,7 @@ public class Figure : MonoBehaviour
 
     [SerializeField] private string type;
     [SerializeField] private string color;
+    public bool didMove = false;
 
     public string GetFigureType()
     {

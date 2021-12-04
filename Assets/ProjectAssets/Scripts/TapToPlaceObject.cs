@@ -23,6 +23,7 @@ public class TapToPlaceObject : MonoBehaviour
     {
         m_ARPlaneManager = GameObject.Find("AR Session Origin").GetComponent<ARPlaneManager>();
         arRaycastManager = FindObjectOfType<ARRaycastManager>();
+
     }
 
 
