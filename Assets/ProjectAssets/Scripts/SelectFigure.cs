@@ -10,7 +10,8 @@ public class SelectFigure : MonoBehaviour
     private int turn = 1; // 1 - white's turn, 2 - black's turn
     GameObject tileRef;
     Mesh mymesh;
-
+    GameObject textControl;
+    private bool isEnded = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,8 @@ public class SelectFigure : MonoBehaviour
         tiles = GameObject.FindGameObjectsWithTag("Tile");
         mymesh = tileRef.GetComponent<MeshFilter>().mesh;
         tileRef.GetComponent<MeshFilter>().mesh = null;
-
+        textControl = GameObject.Find("TextController");
+        textControl.GetComponent<SetText>().textVal = "White on Move";
     }
 
     // Update is called once per frame
@@ -31,7 +33,11 @@ public class SelectFigure : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100))
             {
-                OnTileHit(hit.collider.gameObject);     
+                if(!isEnded)
+                {
+                    OnTileHit(hit.collider.gameObject);
+                }
+               
             }
         }
 
@@ -43,13 +49,17 @@ public class SelectFigure : MonoBehaviour
         if(obj.GetComponent<MoveData>().canMove)
         {
             MovePiece(obj);
+            if (isEnded) return;
+
             if(turn == 1)
             {
                 turn = 2;
+                textControl.GetComponent<SetText>().textVal = "Black on Move";
             }
             else
             {
                 turn = 1;
+                textControl.GetComponent<SetText>().textVal = "White on Move";
             }
         }
         else if (obj.transform.childCount > 0) // if there is piece on this tile
@@ -137,6 +147,18 @@ public class SelectFigure : MonoBehaviour
 
         if(tile.transform.childCount > 0)
         {
+            if(tile.transform.GetChild(0).GetComponent<Figure>().GetFigureType() == "king")
+            {
+                if(tile.transform.GetChild(0).GetComponent<Figure>().GetColor() == "black")
+                {
+                    textControl.GetComponent<SetText>().textVal = "White Wins!!!";               
+                }
+                else
+                {
+                    textControl.GetComponent<SetText>().textVal = "Black Wins!!!";
+                }
+                isEnded = true;
+            }
             Destroy(tile.transform.GetChild(0).gameObject);
         }
 
